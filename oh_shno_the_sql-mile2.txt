@@ -1,0 +1,63 @@
+USE flight_reservation;
+SHOW TABLES;
+ALTER TABLE customer
+    ADD customer_age TINYINT(2) UNSIGNED NOT NULL;
+SELECT * FROM customer;           #view current version.
+UPDATE customer
+    SET customer_age = 65
+    WHERE customer_id = 1;
+SELECT * FROM customer LIMIT 5;        #display the first 5 customer data.
+UPDATE customer
+    SET customer_age = 44
+    WHERE customer_id = 2;
+UPDATE customer
+    SET customer_age = 37
+    WHERE customer_id = 3;
+UPDATE customer
+    SET customer_age = 58
+    WHERE customer_id = 4;
+UPDATE customer
+    SET customer_age = 24
+    WHERE customer_id =5;
+SELECT * FROM customer LIMIT 5;         # show first 5 in customer.
+UPDATE customer                         # make customer_id 6 thru 10
+    SET customer_age = 99               # have age set to 99. 
+    WHERE customer_id BETWEEN 6 AND 10;
+SELECT * FROM customer;        # show all in customer to show new data.
+INSERT INTO customer (first_name,last_name,customer_age)
+VALUES ("Bryan","Burnett",41),
+("Carissa","Moore",32),
+("Kelly","Slater", 51),
+("Yao","Ming", 48),
+("Nina","Agdal", 30);
+SELECT * FROM customer;      # show all in customer to show new data.
+SELECT * FROM flight;        # display current table listings.
+INSERT INTO flight           # add new data to flight.(from_city,to_city,departure_date_time,arrival_date_time,status_id)
+VALUES ("Dallas","Denver",'2016-12-26 00:05:00', '2016-12-26 03:45:00',1);
+SELECT * FROM flight          #display all in flight to show new insert data.
+SELECT * FROM flight_reservation;        #show current table data.
+INSERT INTO flight_reservation (flight_id,customer_id)
+VALUES ('7','11'),
+('3', '12'),
+('3', '13'),
+('7', '15');
+SELECT * FROM flight_reservation;        #display all flight_reservation
+SELECT * FROM customer;                  #display all customer.
+SELECT * FROM flight;                    #show current table of flights.
+					 # remove the seattle to dallas flight.
+DELETE FROM flight WHERE from_city = "Seattle" AND to_city = "Las Vegas";                
+SELECT * FROM flight;                    #display everything from flight.
+
+USE flight_reservation;                  #join the customer and flight tables
+SELECT * FROM customer			 #start with left table
+LEFT JOIN flight ON customer.customer_id = flight.flight_id
+UNION
+SELECT * FROM customer                   #now the right table
+RIGHT JOIN flight ON customer.customer_id = flight.flight_id;
+
+USE flight_reservation;
+SELECT * FROM customer			 #show everyone except for those age 72.
+EXCEPT
+SELECT * FROM customer 
+WHERE customer_age = 72;
+
