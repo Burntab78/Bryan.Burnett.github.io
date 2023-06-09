@@ -31,6 +31,36 @@ ATM Python project from IT 140: Intro to Scripting
 
 oh_no_the_sql from DAD 220: Intro to SQL
 
+
+# Narratives:
+
+# Artifact One: (Software Desigh and Engineering / Algorithms and Data Structure) from IT-140: Intro to Scripting
+
+# 1.	Briefly describe the artifact. What is it? When was it created?
+The first artifact I have chosen to enhance is the ATM.py program I created in the SNHU IT140: Intro to Scripting course. This program was a Python program that performed three things; deposit, withdraw, and show balance. There was no security, nor any way to determine the account the user was in. It was very simple and basic. It taught me how to assign values and define objects. It taught me the difference between float and integer values. I learned to create functions and very simple if/else loops. The program taught me to logically approach the design concept to not have conflicts within the simple construct of the choices. This was rudimentary programming at best. I have since learned that there are much more appropriate ways of writing a program that encompass secure, efficient algorithms and data structure.
+
+# 2.	Justify the inclusion of the artifact in your ePortfolio. Why did you select this item? What specific components of the artifact showcase your skills and abilities in software development? How was the artifact improved? 
+The ATM.py program was selected to become part of my ePortfolio because it demonstrates growth from zero programming to a functioning, useful program with security, logic, algorithms, and thoughtful engineering behind the data structures. The enhanced structure of the loops and functions demonstrate an understanding of fail-safe testing, and fundamental logic regarding secure coding. The more robust algorithm demonstrates a thought in design and structure. The ATM program was improved by creating a way for the user to select the account, secured with a PIN, from a data repository separate from the ATM program itself, but as a file accompanying it for space and real-world security concerns.
+ 
+# 3.	Reflect on the process of enhancing and/or modifying the artifact. What did you learn as you were creating it and improving it? What challenges did you face?
+The challenges upon enhancing this artifact were designing the software to meet a better user experience, while also making the code secure. I struggled with building a better loop structure, and algorithm, but I learned that I could utilize get/set methods to better equip the data repository to do some of the work in the ATM program. I also implemented try and except clauses in the algorithm to ensure no overflows and break points to prevent endless loops. This all came together to make a vastly improved program. The feedback I received from the Professor helped enlighten me to realize that I was not making notes for just me. I was poorly commenting my code, and writing ambiguous messages displayed by the code. Upon implementing the necessary changes, the program was much improved, and far more readable and understandable. The output messages were also imporved and clear.
+
+
+
+# Artifact two: (Database) from SNHU DAD-220: Intro to SQL.
+
+# 1.	Briefly describe the artifact. What is it? When was it created?
+The artifact I have chosen to enhance for the database requirement is the ‘oh_no_the_sql’ file, from SNHU DAD-220: Intro to SQL. Initially, this was a database of flights and customers where the class was to create the database, enter the information, make additions to it, and remove data from it. These were initially documented as screenshots, as it is a query language. I have gone a little further upon recreating this database, by exploring a couple more advanced techniques. I have utilized the “EXCEPT”, and “UNION” commands. I have shown multiple examples of the code and its execution in the fourth paragraph covering the database section. 
+
+# 2.	Justify the inclusion of the artifact in your ePortfolio. Why did you select this item? What specific components of the artifact showcase your skills and abilities in software development? How was the artifact improved? 
+The ‘oh_no_the_sql’ file was necessary to demonstrate the ability to create, remove, and modify data from the database. Recreating this outside of the Codio learning environment helped to demonstrate creativity, resourcefulness, an understanding of databases, and querying data from them. The artifact was improved by utilizing new techniques to search and display data. It was also improved by joining the two tables, as well as removing duplicate entries made in the recreation of this artifact. 
+ 
+# 3.	Reflect on the process of enhancing and/or modifying the artifact. What did you learn as you were creating it and improving it? What challenges did you face?
+The challenges upon enhancing this artifact were designing the software to make a better user experience, while also making better use of the query language. I wanted to explore new techniques and demonstrate what they did. This undertaking came with an unexpected challenge as well as trying to improve upon what I had previously accomplished, I now needed to learn how to operate MySQL outside of Codio. I was to replicate the MySQL database from the ‘oh_no_the_sql’ file I completed in DAD-220. However, I no longer had access to the specific Codio environment for MySQL, but I did still have the files. This meant downloading MySQL and getting to work. This posed a couple of challenges, as they are not the same interface or nomenclature. In attempting to recreate this project, learned how to make a database from the MySQL Workbench. This involved going through some tutorials, the Microsoft and MySQL documentation, and a fair bit of trial and error with the date-time format. This was something new to learn, and I'm very pleased to say the database works, as do the queries I intended to showcase.
+Utilizing the standards of security and coding, I searched and parsed only what was vital to the project. The feedback I received from the Professor helped enlighten me to realize that I was not making notes for just me. I was poorly commenting my code. Upon implementing the necessary changes, the program was much improved, and far more readable and understandable.
+
+
+
 # Code Review:
 Can be found at Github or a faster way to view on YouTube: 
 
