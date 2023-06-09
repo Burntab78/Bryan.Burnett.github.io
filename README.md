@@ -47,7 +47,7 @@ The challenges upon enhancing this artifact were designing the software to meet 
 
 
 
-# Artifact two: (Database) from SNHU DAD-220: Intro to SQL.
+# Artifact Two: (Database) from SNHU DAD-220: Intro to SQL.
 
 # 1.	Briefly describe the artifact. What is it? When was it created?
 The artifact I have chosen to enhance for the database requirement is the ‘oh_no_the_sql’ file, from SNHU DAD-220: Intro to SQL. Initially, this was a database of flights and customers where the class was to create the database, enter the information, make additions to it, and remove data from it. These were initially documented as screenshots, as it is a query language. I have gone a little further upon recreating this database, by exploring a couple more advanced techniques. I have utilized the “EXCEPT”, and “UNION” commands. I have shown multiple examples of the code and its execution in the fourth paragraph covering the database section. 
